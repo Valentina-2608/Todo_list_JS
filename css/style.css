@@ -1,4 +1,52 @@
 .main{width:800px;
 height:1000px;
 background-color:#C7D8FC;
-margin: 0 auto;}
+margin: 0 auto;
+position:relative;}
+
+
+h1{color:darkred;
+text-align:center;
+padding-top:20px;}
+
+
+
+.todo{
+width:600px;
+height:80px;
+position:absolute;
+left:100px;
+top:120px;}
+
+ h3{
+	text-align:center;
+	padding-top:0px;
+}
+
+
+.todo_text{
+	border:none;
+	height:30px;
+	border-radius:5px;
+	box-shadow:2px 2px 5px grey;
+}
+
+
+.add_btn{
+	border:none;
+	border-radius:5px;
+	background-color:darkred;
+	color:white;
+	height:30px;
+	margin-left:20px;
+}
+
+
+.todo_option{
+	border:none;
+	border-radius:5px;
+	height:30px;
+	margin-left:20px;
+}
+	
+	
