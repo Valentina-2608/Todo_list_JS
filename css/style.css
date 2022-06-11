@@ -25,7 +25,7 @@ top:120px;
 }
 
 
-.todo_text{
+#todo_text{
 	border:none;
 	height:30px;
 	border-radius:5px;
@@ -33,21 +33,30 @@ top:120px;
 }
 
 
-.add_btn{
+#add_btn{
 	border:none;
 	border-radius:5px;
 	background-color:darkred;
 	color:white;
 	height:30px;
-	margin-left:20px;
+	margin-left:15px;
+}
+
+#clear_btn{
+	border:none;
+	border-radius:5px;
+	background-color:darkblue;
+	color:white;
+	height:30px;
+	margin-left:15px;
 }
 
 
-.todo_option{
+#todo_option{
 	border:none;
 	border-radius:5px;
 	height:30px;
-	margin-left:20px;
+	margin-left:15px;
 }
 	
 	
@@ -64,7 +73,7 @@ top:120px;
 color:white;
 }
 
-.todos{
+#todos{
 width:500px;
 height:500px;
 background-color:blue;
