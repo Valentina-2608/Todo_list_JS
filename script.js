@@ -12,7 +12,10 @@ add_btn.addEventListener('click', create_todo);
 function create_todo(){
 	let new_todo=document.createElement('div');
 	new_todo.innerHTML=todo_text.value;
+	new_todo.classList.add('new_todo');
 	parent.appendChild(new_todo);
+	
+	
 };
 
 
