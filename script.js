@@ -15,7 +15,15 @@ function create_todo(){
 	new_todo.classList.add('new_todo');
 	parent.appendChild(new_todo);
 	
+	let remove = document.createElement('button');
+	remove.classList.add('remove_btn');
+	remove.innerHTML = 'delete';
+	new_todo.appendChild(remove);
 	
+	remove.addEventListener('click', function(event) {
+		new_todo.parentElement.removeChild(new_todo);
+		event.preventDefault();
+	});
 };
 
 
