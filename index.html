@@ -11,9 +11,9 @@
 <h1>Todo list</h1>
 <h3>Add new todo</h3>
 <div class="todo">
-	<input class="todo_text" type="text" placeholder="Enter new todo" size="40">
-	<input class="add_btn" type="button" value="Add todo">
-	<select class="todo_option">
+	<input id="todo_text" type="text" placeholder="Enter new todo" size="40">
+	<input id="add_btn" type="button" value="Add todo">
+	<select id="todo_option">
 		<option  value="All">All</option>
 		<option  value="completed">Completed</option>
 		<option  value="uncompleted">Uncompleted</option>
@@ -21,12 +21,20 @@
 </div>
 <div class="result">
 <h2>My todos</h2>
-<div class="todos">
-
-
-
+<div id="todos">
 </div>
 </div>
+<script>
+let add_btn=document.getElementById('add_btn');
+let todo_text=document.getElementById('todo_text');
+let parent=document.getElementById('todos');
+add_btn.addEventListener('click', create_todo);
+function create_todo(){
+	let new_todo=document.createElement('div');
+	new_todo.innerHTML=todo_text.value;
+	parent.appendChild(new_todo);
+};
 
+</script>
 </body>
 </html>
