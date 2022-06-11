@@ -65,8 +65,7 @@ top:120px;
 	height:580px;
 	position:absolute;
 	left:100px;
-	top:180px;
-	background-color:green;}
+	top:180px;}
 	
 	
 .result h2{text-align:center;
@@ -80,4 +79,18 @@ background-color:blue;
 position:absolute;
 left:50px;
 }
+
+
+.new_todo{
+	width:480px;
+	padding:8px 0px 8px 8px;
+	background-color:white;
+	margin-top:10px;
+	border-radius:5px;
+	box-shadow:2px 2px 5px grey;
 }
+
+
+
+.remove_btn{position:absolute;
+left:350px;}
