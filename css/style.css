@@ -69,28 +69,58 @@ top:120px;
 	
 	
 .result h2{text-align:center;
-color:white;
+color:blue;
 }
 
 #todos{
-width:500px;
+width:550px;
 height:500px;
-background-color:blue;
 position:absolute;
-left:50px;
+left:30px;
 }
 
 
 .new_todo{
-	width:480px;
-	padding:8px 0px 8px 8px;
-	background-color:white;
-	margin-top:10px;
+	width:520px;
+	height:30px;
 	border-radius:5px;
-	box-shadow:2px 2px 5px grey;
+margin-top:20px;}
+
+.my_todo{width:300px;
+height:27px;
+background-color:white;
+float:left;
+padding:6px 6px 0px 6px;
+border-radius:5px;
+box-shadow:2px 2px 5px grey;}
+
+
+
+.remove_btn{
+background-color:red;
+color:white;
+border:1px solid red;
+border-radius:5px;
+cursor:pointer;
+padding:8px;
+float:left;
+margin-left:10px;}
+
+
+
+.check_todo{
+	 color:green;
+	 text-decoration:line-through;
 }
 
 
 
-.remove_btn{position:absolute;
-left:350px;}
+.check_btn{
+background-color:green;
+color:white;
+float:left;
+border:1px solid green;
+border-radius:5px;
+cursor:pointer;
+padding:8px;
+margin-left:10px;}
