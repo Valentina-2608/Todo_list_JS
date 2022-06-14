@@ -9,8 +9,23 @@
 <body>
 <div class="main">
 <h1>Todo list</h1>
-
+<h3>Add new todo</h3>
+<div class="todo">
+	<input id="todo_text" type="text" placeholder="Enter new todo" size="40">
+	<input id="add_btn" type="button" value="Add todo">
+	<input id="clear_btn" type="button" value="Clear todo">
+	<select id="todo_option">
+		<option  value="All">All</option>
+		<option  value="completed">Completed</option>
+		<option  value="uncompleted">Uncompleted</option>
+	</select>
+</div>
+<div class="result">
+<h2>My todos</h2>
+<div id="todos">
 
 </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
