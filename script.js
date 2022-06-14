@@ -27,6 +27,7 @@ function create_todo(){
 	remove.innerHTML='Delete todo';
 	new_todo.appendChild(remove);
 	
+	
 	remove.addEventListener('click', function(event) {
 		new_todo.parentElement.removeChild(new_todo);
 		event.preventDefault();
@@ -47,3 +48,43 @@ clear_btn.addEventListener('click', clear_todo);
 function clear_todo(){
 	todo_text.value="";
 }
+
+
+let todo_option=document.getElementById('todo_option');
+todo_option.addEventListener('change', filterTodo);
+
+/* Filter todo */
+function filterTodo(event){
+let todos=document.getElementById('todos');
+const elems = todos.children;
+for(let elem of elems){
+	console.log(elem);
+}
+
+Array.from(elems).forEach(function(elem){
+		switch(event.target.value){
+			case "All":
+				elem.style.display='block';
+				break;
+			case "Completed":
+				if (elem.firstElementChild.className==='my_todo check_todo'){
+						elem.style.display='block';
+				}else{
+						elem.style.display='none';
+				}
+				break;
+			case "Uncompleted":
+				if (elem.firstElementChild.className=='my_todo'){
+						elem.style.display='block';
+				}else{
+						elem.style.display='none';
+				}
+				break;
+		}
+	});
+	
+	
+}
+			
+			
+		
